@@ -1,0 +1,109 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+
+%使用这个包和下面的命令可以设置整个文档的缩进
+\usepackage{indentfirst}
+\setlength{\parindent}{1.5em}
+
+
+
+
+\title{Notes for Indian Group Instruction}
+\author{Synferlo}
+\date{August 29, 2020}
+
+
+\begin{document}
+    \maketitle
+
+    \newpage
+    \section{Layout Formatting}
+        \subsection{Indentation}
+            %换行的话只需要留出一个空行即可，但是注意，这种方法换行后会默认首行缩进！
+            %如不想 “首行缩进”， 在每一段段首 使用 \noindent 命令
+            
+            Example with indentation:
+
+            You might have noticed that even though the length of the lines of text we type in a
+            paragraph are different, in the output, all lines are of equal length, aligned perfectly on
+            the right and left. TEX does this by adjusting the space between the words.\\
+
+            Example without indentation:
+
+            \noindent You might have noticed that even though the length of the lines of text we type in a
+            paragraph are different, in the output, all lines are of equal length, aligned perfectly on
+            the right and left. TEX does this by adjusting the space between the words.
+
+        \subsection{Quotes}
+            % quotes 引号
+
+        \subsection{Dash lines}
+            % 通过输入不同数量的 - 控制长短
+            X-ray are discussed in pages 221--255 of Volume 3---the volume on electromagnetic waves.
+        
+        \subsection{Backlash}
+            % 使用 \textbackslash 输出斜线。
+            Use \textbackslash textbackslash to produce \textbackslash.
+
+        \subsection{Special symbols}
+            % 使用 \ 加符号的形式 输出特定符号
+            \noindent 90 \% of the people\\
+            \# \\
+            \$30 \\
+            \_ \\
+            \& \\
+            \{  \} \\
+            \textasciitilde\\
+            \textasciicircum
+
+        
+        \subsection{Line-Distance}
+            % 可使用 \\[10pt] 来设定单独一行的行间距
+            This is the first line.\\[15pt]
+            This is the second line.\\
+            This is the thrid line without setting distance.
+
+        
+        \subsection{Text Positioning}
+            % 使用 center环境 完成居中， 使用[.75cm]规定行间距， 使用flushright规定右对齐, flushleft左对齐
+            \begin{center}
+                Clemson University\\[.75cm]
+                Certificate
+            \end{center}
+            
+            \noindent This is to certify that Synferlo has finish this program.
+
+            \begin{flushright}
+                The Director\\
+                SynFerlo
+            \end{flushright}
+
+    \section{Fonts}
+
+        \subsection{Type style}
+            See font notes.
+        
+        \subsection{Emphasis and Bold}
+            % 使用 \emph 完成强调命令，他会将文本变成与周围不同的字体。
+            % 比如正文是正常的upright字体，\emph 会把单词变成斜体
+            % 如果正文是斜体， \emph 会把单词变成upright
+            \textit{This is a test about \emph{emphasis}}.\\
+            \indent This is a test about \emph{emphasis}.
+        
+            {\bfseries This is a good learning} opportunity.
+    
+    \section{document}
+    
+        \subsection{Document Class}
+            % \documentclass[]{}
+            % [] 写参数，如字号，纸张大小 a4paper, a5paper, b5paper
+            Setup documentclass using \textbackslash documentclass [ ] \{ \}
+
+            
+         
+            
+
+
+
+
+\end{document}

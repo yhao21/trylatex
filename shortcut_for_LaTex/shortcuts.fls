@@ -1,0 +1,37 @@
+PWD d:\Yan\PHD PROGRAM\Class\Fall 2020\Try_LaTex\shortcut_for_LaTex
+INPUT C:\Users\13701\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
+INPUT d:\Yan\PHD PROGRAM\Class\Fall 2020\Try_LaTex\shortcut_for_LaTex\shortcuts.tex
+OUTPUT d:\Yan\PHD PROGRAM\Class\Fall 2020\Try_LaTex\shortcut_for_LaTex\shortcuts.log
+INPUT D:\Latex\tex\latex\base\article.cls
+INPUT D:\Latex\tex\latex\base\article.cls
+INPUT D:\Latex\tex\latex\base\size12.clo
+INPUT D:\Latex\tex\latex\base\size12.clo
+INPUT D:\Latex\fonts\tfm\public\cm\cmr12.tfm
+INPUT D:\Latex\tex\latex\amsmath\amsmath.sty
+INPUT D:\Latex\tex\latex\amsmath\amsmath.sty
+INPUT D:\Latex\tex\latex\amsmath\amstext.sty
+INPUT D:\Latex\tex\latex\amsmath\amstext.sty
+INPUT D:\Latex\tex\latex\amsmath\amsgen.sty
+INPUT D:\Latex\tex\latex\amsmath\amsgen.sty
+INPUT D:\Latex\tex\latex\amsmath\amsbsy.sty
+INPUT D:\Latex\tex\latex\amsmath\amsbsy.sty
+INPUT D:\Latex\tex\latex\amsmath\amsopn.sty
+INPUT D:\Latex\tex\latex\amsmath\amsopn.sty
+INPUT D:\Latex\tex\latex\l3backend\l3backend-pdfmode.def
+INPUT D:\Latex\tex\latex\l3backend\l3backend-pdfmode.def
+INPUT d:\Yan\PHD PROGRAM\Class\Fall 2020\Try_LaTex\shortcut_for_LaTex\shortcuts.aux
+INPUT d:\Yan\PHD PROGRAM\Class\Fall 2020\Try_LaTex\shortcut_for_LaTex\shortcuts.aux
+OUTPUT d:\Yan\PHD PROGRAM\Class\Fall 2020\Try_LaTex\shortcut_for_LaTex\shortcuts.aux
+INPUT D:\Latex\fonts\tfm\public\cm\cmr17.tfm
+INPUT D:\Latex\fonts\tfm\public\cm\cmr12.tfm
+INPUT D:\Latex\fonts\tfm\public\cm\cmmi12.tfm
+INPUT D:\Latex\fonts\tfm\public\cm\cmsy10.tfm
+INPUT D:\Latex\fonts\tfm\public\cm\cmex10.tfm
+INPUT D:\Latex\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
+OUTPUT d:\Yan\PHD PROGRAM\Class\Fall 2020\Try_LaTex\shortcut_for_LaTex\shortcuts.pdf
+INPUT C:\Users\13701\AppData\Local\MiKTeX\pdftex\config\pdftex.map
+INPUT d:\Yan\PHD PROGRAM\Class\Fall 2020\Try_LaTex\shortcut_for_LaTex\shortcuts.aux
+INPUT D:\Latex\fonts\type1\public\amsfonts\cm\cmr12.pfb
+INPUT D:\Latex\fonts\type1\public\amsfonts\cm\cmr12.pfb
+INPUT D:\Latex\fonts\type1\public\amsfonts\cm\cmr17.pfb
+INPUT D:\Latex\fonts\type1\public\amsfonts\cm\cmr17.pfb

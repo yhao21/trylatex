@@ -1,0 +1,82 @@
+%这里还可以使用book, report, letter等class
+%注意，在letter类里面，没有maketitle命令
+%我们在latex中一般不会删除内容，而是注释掉，方便我们在后续调整文档类时重新启用
+\documentclass{article}
+%这里使用amsmath数学包，这样可以让自己使用begin{equation}和begin{aligned}格式化处理数学公式
+\usepackage{amsmath}
+%使用这个ctex包可以让文档识别中文，如果不使用，则需要将documentclass设置为ctexart
+\usepackage{ctex}
+
+
+%自定义自己的命令
+%在导言区，也就是这里，定义自己的命令。比如，我想吧角度符号那个圆圈定义为 \degree：
+%使用 \newcommand 命令进行自定义，后面接上你想定义的命令，花括号内填写这个命令对应的代码
+\newcommand \degree{^\circ}
+
+
+\title{Basic Setup for LaTex}
+\author{SynFerLo}
+\date{August 27, 2020}
+
+%这里是正文区域
+%s文档内容需要编写在begin和end document之间
+%一个latex文件有且只能有一个document环境
+\begin{document}
+
+    %这里使用maketitle是为了显示我们在8-10行写的标题、作者、日期，若不添加maketitle
+    %则第一页显示的就是begin{document}后的正文部分
+    \maketitle
+
+    \newpage
+
+    %快捷输入数学公式的方法：
+    %1. 行内公式： $ formula $      编辑后的公式与文本在同一行
+    %2. 行间公式： $$ formula $$    编辑后的公式会在新的一行，并且自动居中
+    
+    This is an example for writing a formula in the same line.
+    $U(X)=X_{1}^\alpha X_{2}^\beta$
+
+    This is an example for writing a formula in a new line.
+    $$U(X)=X_{1}^\alpha X_{2}^\beta$$
+
+    %换行:
+    %我们可以通过在代码区空一行进行pdf中的换行，注意换行后是自动缩进的
+
+    %也可以通过 \\ 进行换行
+    %注意，\\换行是不会进行首行缩进的！！
+    Example 1:
+
+    This is an example of switch line.
+
+    This is the new line.\newline
+
+    Example 2:
+
+    This is an example of switch line.
+
+    This is the new line.\newline
+
+    \textbf{Example 3:}
+
+    This is an example for self-designed command:
+    %注意，书写任何数学公式都需要添加$, 不然可能会出现排版错误
+    $\angle90\degree$
+
+
+    If you need to type backslash in your file, use \textbackslash
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
+
+
+
+

@@ -1,0 +1,97 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{indentfirst}
+\setlength{\parindent}{0em}
+\usepackage{graphicx}
+\usepackage{setspace}
+
+
+%上角标
+\newcommand{\rr}[1]{^{#1}}
+%粗体字
+\newcommand{\bb}[1]{{\textbf {#1}}}
+%下划线
+\newcommand{\uu}[1]{\underline{#1}}
+%求极限
+\newcommand{\infinity}{\infty}
+%分式求导
+\newcommand{\fp}[2]{\frac{\partial{#1}}{\partial{#2}}}
+%加总公式
+\newcommand{\addup}[4]{\sum\limits_{#1 = #2} ^#3 {#4}}
+%连乘公式
+\newcommand{\pai}[4]{\prod_{#1 = #2} ^#3 {#4}}
+%求极限
+\newcommand{\Lim}[3]{\lim_{#1 \to #2} {#3}}
+%可调整大小的括号
+\newcommand{\bkt}[1]{\left( {#1} \right)}
+%积分
+\newcommand{\integral}[3]{\int_{#1}^{#2}{#3}}
+%行内公式
+\newcommand{\e}[1]{$ #1 $}
+%行间公式
+\newcommand{\ee}[1]{$$ #1 $$}
+
+
+
+\title{Customized Math Command}
+\author{Synferlo}
+\date{August 28, 2020}
+
+
+\begin{document}
+    \maketitle
+    \newpage
+
+    \section{Math Command}
+    $$$$
+
+        \subsection{Summation}
+            % Command: \addup{arg1}{arg2}{arg3}{arg4}
+            % arg1: 下标变量； arg2： 下标起始值；  arg3：加总上限（上标）； arg4：加总号后面的公式
+            $$ \addup{s}{0}{\infinity}{X_s} $$
+
+
+        \subsection{Fraction-Partial-Derivative}
+            % Command: \fp{arg1}{arg2}
+            % arg1: 分子； arg2：分母
+            $$ \fp{X_i}{P_i} $$
+
+        
+        \subsection{Production}
+            % Command: \pai{arg1}{arg2}{arg3}{arg4}
+            % arg1: 下标变量； arg2： 下标起始值；  arg3：连乘上限（上标）； arg4：连乘号后面的公式
+            $$ \pai{i}{1}{\infinity}{X_i} $$
+
+
+        \subsection{Limitation}
+            % Command: \Lim{arg1}{arg2}{arg3}
+            % arg1: 变量； arg2：趋近值；   arg3：后续公式
+            $$ \Lim{n}{\infinity}{\frac{\sigma^2}{n}} $$
+
+
+        \subsection{Parenthese}
+            $$ \bkt{\cfrac{\addup{i}{1}{\infinity}{X_i}}{\pai{i}{1}{\infinity}{Y_i}}}$$
+
+
+        \subsection{Integral}
+            % Command: \integral{arg1}{arg2}{arg3}
+            % arg1: 下限； arg2：上限； arg3：积分内公式
+            $$ f(x) = \integral{-\infinity}{\infinity}{F(x)}dx $$
+
+        \subsection{Math Equation}
+            % Command: \e{arg}
+            % arg1:需要书写的公式
+            This is for inline equation \e{f(x)}\\
+
+            This is an example for newline equation \ee{
+                f(x) = g(x)
+                }
+
+        \subsection{BoldFace}
+            If you need to set a \bb{boldface}
+
+
+
+
+
+\end{document}

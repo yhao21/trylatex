@@ -1,0 +1,126 @@
+\documentclass{article}
+\usepackage{ctex}
+
+%设置斜体+变粗+罗马族
+\newcommand{\myfont}{\textbf{\textit{hello}}}
+
+
+\title{Notes for font-change in LaTex}
+\author{Synferlo}
+\date{August 28, 2020}
+
+\begin{document}
+
+\maketitle
+    \newpage
+    LaTex中一个字体有5种属性：\\
+
+    1. 字体编码\\
+
+
+    2. 字体族(罗马字体、无衬线字体、打字机字体)
+
+    %begin document下方设置字体后，则全局通用，也可以通过在每个段落前添加字体命令来修改当前段落的字体
+    字体设置命令：\\
+
+    方式一：
+
+    \textrm{Roman Family} 罗马字体
+    
+    \textsf{Sans Serif Family} 无衬线字体
+
+
+    \texttt{typewriter Family} 打字机字体\\
+
+    方式二：
+
+    \rmfamily Roman Family 罗马字体
+
+    \sffamily Sans Serif Family 无衬线字体
+
+    \ttfamily Typewriter Family 打字机字体\\
+
+    通过每一段前添加命令修改段落字体：
+
+    \rmfamily This is an Example for Roman Family paragraph.
+
+    \ttfamily This is an Example for Typewriter Family paragraph.\\
+
+
+    3. 字体系列（粗细，宽度）\\
+
+    \textmd{Medium Series} 一般样式
+    
+    \textbf{Boldface Series} 粗体样式
+
+    {\mdseries Medium Series} 一般样式
+
+    {\bfseries Boldface Series} 粗体样式\\%全局粗体
+
+    4. 字体形状（直立，斜体，伪斜体，小型大写）\\
+
+    \textup{Upright Shape} 直立字体
+
+    \textit{Italic Shape} 斜体
+
+    \textsl{Slanted Shape} 伪斜体
+
+    \textsc{Small Caps Shape} 小型大写\\
+
+
+    5. 中文字体设置：\\
+
+    需要使用ctex包后才能设置中文字体！
+    {\songti 宋体}
+
+    {\heiti 黑体}
+
+    {\fangsong 仿宋}
+
+    {\kaishu 楷书}
+
+    6. 字体大小\\
+
+    整体文档的字体大小需要在documentclass[字号]{article}中进行设置。
+
+    比如：documentclass[10pt]{article} 表示全局使用10pt的大小作为标准字体
+
+    一般只有10,11,12三种字号
+
+    设置完全局后，若要在某处单独修改字号，可通过以下方式：
+    
+    {\tiny          Hello}\\
+    {\scriptsize    Hello}\\
+    {\footnotesize  Hello}\\
+    {\small         Hello}\\
+
+    This is Normal Hello\\
+
+    {\normalsize    Hello}\\
+    {\large         Hello}\\
+    {\Large         Hello}\\
+    {\LARGE         Hello}\\
+    {\huge          Hello}\\
+    {\Huge          Hello}\\
+
+    对于中文命令，ctex专门设置了特殊的命令:\\
+
+    {\zihao{5}   你好}
+
+    {\zihao{-0}  你好}\\
+
+    注意：一般而言我们不会在正文中频繁使用切换字体、字号的命令，而是会以newcommand的形式在导言区
+    预先设置好字体、字号、样式的组合，而后直接在正文中使用新的命令引用这个组合。\\
+
+    现在来引用我们设置好的字体命令：myfont
+
+    \myfont{This is the font designed for myself.}
+
+
+
+
+
+
+
+
+\end{document}
