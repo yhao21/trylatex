@@ -1,0 +1,154 @@
+\documentclass[12pt]{beamer}
+%\usepackage[english]{babel}
+%\usetheme{xxx}   % select a theme for the slides
+\usepackage[absolute,overlay,showboxes]{textpos}
+\usetheme{Boadilla}
+
+
+% If you want the content showing up at the begining of each section, with transparent
+% on, uncomment function below
+
+\AtBeginSection[]
+{
+		\begin{frame}
+				\frametitle{Content}
+				\tableofcontents[currentsection]
+		\end{frame}
+}
+
+
+%\AtBeginSubsection[]
+%{
+%		\begin{frame}
+%				\frametitle{Table}
+%				\tableofcontents[currentsubsection]
+%		\end{frame}
+%}
+
+
+
+
+
+
+
+
+
+
+\title[My beamer]{Title page}
+\author[]{synferlo}
+\date[VLC 2022]{Very large conference, January 2022}
+%\date[date:short]{date:full}
+\logo{\includegraphics[scale=.01]{~/my_disk/git/bg_pic/ubuntu_bg.jpg}}
+
+\begin{document}
+
+\frame{\titlepage}
+
+
+
+
+\section{Chapter one}
+\subsection{chapter 1.1}
+
+\begin{frame}
+		\frametitle{There is no largest prime number}
+		\framesubtitle{the proof uses}
+		There is no largest prime number
+
+		\begin{theorem}
+				There is no
+		\end{theorem}
+
+\end{frame}
+
+
+
+% \pause    animation, this line remains in later slides
+%======================================================
+
+\subsection{chapter 1.2 Pause and animation}
+\begin{frame}
+\frametitle{Pause and animation}
+\begin{itemize}
+\item first line \pause\\
+\item second line \pause\\
+\item third line \pause\\
+\item fourth line \pause\\
+\end{itemize}
+
+\end{frame}
+
+
+
+
+
+
+\section{Chapter two}
+\subsection{chapter 2.1}
+\begin{frame}
+\frametitle{Highlight}
+\framesubtitle{text highlight}
+This is a \alert{Highlighted} text.
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Highlight}
+\framesubtitle{hightlighted box}
+
+\begin{block}{thm 1}
+		This is a highlighted theorem
+\end{block}
+
+
+\begin{block}{lemma 1}
+\end{block}
+
+
+%three types of highlighted box
+%======================================================
+
+\begin{block}{ block title}
+\end{block}
+
+\begin{alertblock}{  title}
+\end{alertblock}
+\begin{example}{  title}
+\end{example}
+
+
+
+\end{frame}
+
+
+
+\subsection{chapter 2.2}
+
+\begin{frame}
+\frametitle{2.2 hasd}
+\framesubtitle{}
+
+\end{frame}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
